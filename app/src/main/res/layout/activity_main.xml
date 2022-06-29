@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity_bg"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewMainActivity"
+        android:id="@+id/card_view_fantasy_category"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+        style="@style/HorizontalLinearViewMainActivity"
+            >
+
+            <ImageView
+                style="@style/ImageViewMainActivity"
+                android:src="@drawable/main_activity_fantasy"
+                />
+
+            <TextView
+                style="@style/TextViewMainActivity"
+                android:text="Fantasy" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewMainActivity"
+        android:id="@+id/card_view_horror_category"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            style="@style/HorizontalLinearViewMainActivity"
+            >
+
+            <ImageView
+                style="@style/ImageViewMainActivity"
+                android:src="@drawable/main_activity_horror"
+                />
+
+            <TextView
+                style="@style/TextViewMainActivity"
+                android:text="Horror" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewMainActivity"
+        android:id="@+id/card_view_drama_category"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            style="@style/HorizontalLinearViewMainActivity"
+            >
+
+            <ImageView
+                style="@style/ImageViewMainActivity"
+                android:src="@drawable/main_activity_drama"
+                />
+
+            <TextView
+                style="@style/TextViewMainActivity"
+                android:text="Drama" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

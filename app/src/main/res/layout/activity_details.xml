@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_orange_dark">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFCC80">
+
+    <ImageView
+        android:id="@+id/banner_anchor_point"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bannerplaceholder" />
+
+    <ImageView
+        android:id="@+id/category_image_anchor_point"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/bannerplaceholder"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/selected_item_anchor_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/category_image_anchor_point"
+        android:layout_below="@id/banner_anchor_point"
+        android:textColor="@android:color/background_dark"
+        android:text="Selected Item"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="26sp"
+        />
+
+    <LinearLayout
+        android:background="#E65100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewTitleActivityDetails"
+            android:text="Synopsis:"
+            />
+
+        <android.support.v7.widget.CardView
+            style="@style/CardViewActivityDetails"
+            app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/text_view_synopsis"
+            style="@style/TextViewBodyActivityDetails"
+            android:textStyle="italic"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        style="@style/TextViewTitleActivityDetails"
+        android:text="Author:"
+        />
+
+        <android.support.v7.widget.CardView
+            style="@style/CardViewActivityDetails"
+            app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/details_text_view_author_name"
+            style="@style/TextViewBodyActivityDetails"
+            android:text="Author name"
+            />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            style="@style/TextViewTitleActivityDetails"
+            android:text="Publisher:"
+            />
+
+        <android.support.v7.widget.CardView
+            style="@style/CardViewActivityDetails"
+            app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/details_text_view_publisher_name"
+            style="@style/TextViewBodyActivityDetails"
+            android:text="Publisher name"
+            />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
